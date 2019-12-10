@@ -9,9 +9,9 @@
   			</div>
   			<div class="card-body">
   				@if ($student->picture==null)
-  					<img alt="Card image cap" height='150px' src="{{asset('storage/pictures/placeholder.jpg') }}">
+  					<img alt="Card image cap" height='150px' src="">
   				@else
-  					<img alt="Card image cap" height='200px' src="{{asset('storage/pictures/'.$student->picture) }}">
+  					<img alt="Card image cap" height='200px' src="">
   				@endif
   	
   				<table class="table table-bordered">
@@ -24,23 +24,23 @@
                     <tbody>
                     	<tr>
                            <td><i class="fa fa-arrow-circle-right"></i> ID</td>
-                           <td>{{$student->id}}</td>
+                           <td></td>
                         </tr>
                    	    <tr>
                            <td><i class="fa fa-arrow-circle-right"></i> Name</td>
-                           <td>{{$student->name}}</td>
+                           <td></td>
                         </tr> 
                   	    <tr>
                            <td><i class="fa fa-arrow-circle-right"></i> Email</td>
-                           <td>{{$student->email}}</td>
+                           <td></td>
                         </tr>      
                         <tr>
                            <td><i class="fa fa-arrow-circle-right"></i> Program</td>
-                           <td>{{$student->program->description}}</td>
+                           <td></td>
                         </tr>   
                        <tr>
                            <td><i class="fa fa-arrow-circle-right"></i> Status</td>
-                           <td>{{$student->status}}</td>
+                           <td></td>
                         </tr>                         
                     </tbody>
                 </table>				
